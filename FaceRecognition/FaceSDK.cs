@@ -41,20 +41,6 @@ namespace KBYAIFace
         }
     };
 
-    //[StructLayout(LayoutKind.Sequential)]
-    //public struct FACE_RESULTS
-    //{
-    //    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 10)]
-    //    public FACE_RESULT[] faceResults;
-
-    //    public FACE_RESULTS(int n)
-    //    {
-    //        faceResults = new FACE_RESULT[10];
-    //        for (int i = 0; i < 10; i++)
-    //            faceResults[i] = new FACE_RESULT(0);
-    //    }
-    //};
-
     class FaceSDK
     {
         [DllImport("facesdk2.dll")]
@@ -180,41 +166,5 @@ namespace KBYAIFace
                 Marshal.FreeHGlobal(templatesPtr2);
             }
         }
-
-        //public static int ttv_process(byte[] imgData, int width, int height, ref FACE_RESULTS faceResults, int maxFaceNum, int mode)
-        //{
-        //    IntPtr imgPtr = Marshal.AllocHGlobal(imgData.Length);
-        //    Marshal.Copy(imgData, 0, imgPtr, imgData.Length);
-
-        //    try
-        //    {
-        //        int ret = ttv_process(imgPtr, width, height, ref faceResults, maxFaceNum, mode);
-        //        return ret;
-        //    }
-        //    finally
-        //    {
-        //        Marshal.FreeHGlobal(imgPtr);
-        //    }
-        //}
-
-        //public static float ttv_compare_feature(byte[] feat1, byte[] feat2)
-        //{
-        //    IntPtr featPtr1 = Marshal.AllocHGlobal(feat1.Length);
-        //    Marshal.Copy(feat1, 0, featPtr1, feat1.Length);
-
-        //    IntPtr featPtr2 = Marshal.AllocHGlobal(feat2.Length);
-        //    Marshal.Copy(feat2, 0, featPtr2, feat2.Length);
-
-        //    try
-        //    {
-        //        float ret = ttv_compare_feature(featPtr1, featPtr2);
-        //        return ret;
-        //    }
-        //    finally
-        //    {
-        //        Marshal.FreeHGlobal(featPtr1);
-        //        Marshal.FreeHGlobal(featPtr2);
-        //    }
-        //}
     }
 }
