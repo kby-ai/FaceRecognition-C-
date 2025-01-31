@@ -58,7 +58,7 @@ It includes capabilities for testing face recognition in `1:N matching` scenario
 ## SDK License
 
 This project uses `KBY-AI`'s `Face Recognition Server SDK`, which requires a license per machine.
-
+- To use the latest update, plesae download the latest project from [here](https://drive.google.com/file/d/1d3lT-iQc-7EJUJ_U6WYl16Pz2C37yBtZ/view?usp=sharing)
 - To request the license, please provide us with the `machine code` obtained from the `getMachineCode` function.
 
 - Ensure you copy the `license.txt` file to the `bin/x64/Debug` folder, as shown in the image below:
